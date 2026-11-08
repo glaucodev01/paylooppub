@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Política de Privacidade do aplicativo PayLoop. Saiba como protegemos seus dados, como funciona a automação segura via Gmail API e quais são os seus direitos.">
+    <meta name="theme-color" content="#0D253F">
+    <link rel="icon" type="image/png" href="PayLoop.png">
+    <title>Política de Privacidade - PayLoop</title>
+    <style>
+        :root {
+            --navy: #0D253F;
+            --navy-light: #102A43;
+            --turquoise: #1EBEA5;
+            --turquoise-dark: #159A85;
+            --turquoise-soft: rgba(30, 190, 165, 0.1);
+            --bg-light: #F5F7FA;
+            --white: #FFFFFF;
+            --text-muted: #52667A;
+            --border-color: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.65;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--navy);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top Navigation */
+        .navbar {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 14px 24px;
+        }
+
+        .navbar-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .brand img {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+        }
+
+        .back-link {
+            color: #5CE6CF;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.85;
+            text-decoration: underline;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 32px auto 48px;
+            background-color: var(--white);
+            padding: 40px 48px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(13, 37, 63, 0.08);
+            flex-grow: 1;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 2.2rem;
+            color: var(--navy);
+        }
+
+        .updated-badge {
+            display: inline-block;
+            background-color: var(--bg-light);
+            color: var(--text-muted);
+            padding: 4px 14px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            color: var(--navy);
+            border-bottom: 2px solid var(--turquoise);
+            padding-bottom: 8px;
+            font-size: 1.4rem;
+            margin-top: 28px;
+            margin-bottom: 14px;
+        }
+
+        p, li {
+            font-size: 1rem;
+            color: var(--navy-light);
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--navy);
+        }
+
+        code {
+            background-color: var(--bg-light);
+            color: var(--navy);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.9em;
+            border: 1px solid var(--border-color);
+        }
+
+        .callout {
+            background-color: var(--turquoise-soft);
+            border-left: 4px solid var(--turquoise);
+            padding: 18px 22px;
+            border-radius: 0 10px 10px 0;
+            margin: 18px 0;
+        }
+
+        .callout p {
+            margin: 0;
+        }
+
+        .callout p + p {
+            margin-top: 10px;
+        }
+
+        a {
+            color: var(--turquoise-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            background-color: var(--white);
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                margin: 16px 12px 32px;
+                padding: 24px 18px;
+            }
+
+            header h1 {
+                font-size: 1.7rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="brand">
+                <img src="PayLoop.png" alt="Logo PayLoop">
+                <span>PayLoop</span>
+            </a>
+            <a href="index.html" class="back-link">&larr; Voltar para o Início</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Política de Privacidade do PayLoop</h1>
+            <span class="updated-badge"><strong>Última atualização:</strong> Novembro de 2026</span>
+        </header>
+
+        <main>
+            <section>
+                <h2>1. Introdução</h2>
+                <p>Bem-vindo ao <strong>PayLoop</strong>, desenvolvido pela <strong>ByteFlow Studios</strong>. Sua privacidade e a segurança dos seus dados financeiros são prioridades inegociáveis para nós. Esta Política de Privacidade explica de forma clara e transparente quais informações coletamos, como as utilizamos, como as protegemos e quais são os seus direitos, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018) e com as políticas do Google.</p>
+                <p>Ao utilizar o aplicativo PayLoop, você concorda com as práticas descritas nesta Política de Privacidade.</p>
+            </section>
+
+            <section>
+                <h2>2. Informações que Coletamos</h2>
+                <p>Coletamos apenas as informações estritamente necessárias para fornecer e aprimorar as funcionalidades do aplicativo:</p>
+                <ul>
+                    <li>
+                        <strong>Dados de Contas e Lançamentos Financeiros:</strong>
+                        <ul>
+                            <li>Título da conta, valor, datas de vencimento e pagamento, tipo (a pagar ou a receber), recorrência, código de barras/linha digitável e anotações cadastradas por você ou extraídas mediante sua autorização.</li>
+                            <li><strong>Arquivos e Comprovantes (Câmera e PDF):</strong> Imagens capturadas pela câmera ou arquivos PDF selecionados por você para extração automática de dados (OCR) de boletos e carnês, ou para anexação de comprovantes de pagamento localmente no seu aparelho. O acesso à câmera e aos arquivos ocorre exclusivamente mediante sua ação e permissão explícita.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Informações de Autenticação e Sincronização:</strong>
+                        <ul>
+                            <li>Ao fazer login com sua Conta Google (Google Sign-In), recebemos os dados básicos do seu perfil (nome de exibição, endereço de e-mail, identificador único de usuário e URL da foto de perfil) para autenticar seu acesso e sincronizar suas contas na nuvem.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Preferências e Configurações do Aplicativo:</strong>
+                        <ul>
+                            <li>Armazenamos localmente no seu dispositivo (via <code>shared_preferences</code>) e no seu perfil em nuvem suas preferências de uso, como idioma, tema visual (claro/escuro), dia de início do ciclo de pagamento e horários de lembretes.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Como Utilizamos Suas Informações</h2>
+                <p>As informações coletadas são utilizadas exclusivamente para:</p>
+                <ul>
+                    <li><strong>Organização e Alertas de Contas:</strong> Classificar suas contas por ciclo (Pendentes, Pagas, Próximo Ciclo e Arquivadas), apresentar relatórios de receitas e despesas e agendar notificações locais e lembretes de vencimento.</li>
+                    <li><strong>Leitura Inteligente de Boletos (OCR):</strong> Processar localmente no seu dispositivo (utilizando tecnologias como o Google ML Kit Text Recognition) imagens ou PDFs de boletos e carnês para preencher automaticamente valor, vencimento e código de barras.</li>
+                    <li><strong>Funcionamento Offline e Sincronização em Nuvem:</strong> Suas contas ficam salvas em um banco de dados local (SQLite) para uso offline imediato e são sincronizadas de forma segura com o Google Cloud Firestore para backup e acesso em múltiplos dispositivos.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Automação de E-mails e Conformidade com a Política de Dados do Google (Gmail API)</h2>
+                <p>O PayLoop oferece a funcionalidade <strong>totalmente opcional</strong> de Automação Inteligente de E-mails, permitindo identificar boletos e faturas recebidos na sua conta do Gmail.</p>
+                <ul>
+                    <li><strong>Consentimento Explícito e Escopo Restrito:</strong> A conexão com o Gmail só é ativada se você optar explicitamente por conectá-la na tela de Automação do aplicativo e autorizar o escopo de leitura <code>https://www.googleapis.com/auth/gmail.readonly</code> na tela oficial de consentimento do Google.</li>
+                    <li><strong>Leitura Baseada em Filtros do Usuário:</strong> O sistema busca exclusivamente e-mails que correspondam aos <strong>Filtros Monitorados</strong> configurados por você (remetente e/ou palavras-chave no assunto) para extrair os dados da fatura (valor, data de vencimento e código de barras) e criar ou atualizar sua conta no PayLoop.</li>
+                    <li><strong>Colaboração Voluntária Anonimizada ("Treinar o Robô"):</strong> Caso você opte voluntariamente por enviar um modelo de fatura não reconhecida para aprimoramento dos extratores, o aplicativo remove e mascara automaticamente dados pessoais sensíveis (como CPF, CNPJ, e-mail, telefone e endereço) no próprio dispositivo antes do envio.</li>
+                </ul>
+
+                <div class="callout">
+                    <p><strong>Declaração de Uso Limitado (Google API Services User Data Policy):</strong></p>
+                    <p>O uso e a transferência pelo PayLoop para qualquer outro aplicativo de informações recebidas das APIs do Google estão em estrita conformidade com a <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" target="_blank" rel="noopener noreferrer">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de <strong>Uso Limitado (Limited Use)</strong>:</p>
+                    <ul>
+                        <li>Não lemos, armazenamos ou processamos e-mails pessoais que não atendam aos filtros de faturas definidos pelo usuário.</li>
+                        <li>Nunca vendemos, alugamos ou compartilhamos dados obtidos através da API do Gmail com terceiros, anunciantes ou corretores de dados.</li>
+                        <li>Não utilizamos dados provenientes das APIs do Google para veicular publicidade nem para treinar modelos generalistas de Inteligência Artificial.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>5. Segurança e Armazenamento dos Dados</h2>
+                <p>Adotamos medidas técnicas rigorosas para proteger suas informações:</p>
+                <ul>
+                    <li><strong>Criptografia em Trânsito e em Repouso:</strong> Toda a comunicação entre o aplicativo, o Firebase e as APIs do Google ocorre sob conexões criptografadas (HTTPS/TLS).</li>
+                    <li><strong>Isolamento de Dados por Usuário:</strong> As regras de segurança do Firebase Firestore garantem que cada usuário autenticado só possa acessar, modificar ou remover seus próprios registros.</li>
+                    <li><strong>Gestão Segura de Credenciais OAuth:</strong> Caso você ative a automação do Gmail, o token de atualização é mantido de forma protegida em servidor seguro no Google Cloud e é imediatamente excluído quando você desconecta a automação pelo aplicativo.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Seus Direitos, Controle e Exclusão de Dados (LGPD)</h2>
+                <p>Você possui controle integral sobre seus dados pessoais e financeiros a qualquer momento:</p>
+                <ul>
+                    <li><strong>Edição e Exclusão de Contas:</strong> Você pode criar, editar, arquivar ou excluir permanentemente qualquer conta ou filtro diretamente pelo aplicativo. A exclusão é refletida tanto no banco de dados local quanto na nuvem.</li>
+                    <li><strong>Desconexão e Revogação do Gmail:</strong> Você pode desativar a Automação de E-mails a qualquer momento no menu <em>Configurações &rarr; Automação de Contas &rarr; Desconectar</em>, o que apaga imediatamente o token de acesso armazenado. Você também pode revogar o acesso diretamente na página de <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Permissões da sua Conta Google</a>.</li>
+                    <li><strong>Solicitação de Exclusão Completa da Conta:</strong> Para solicitar a exclusão definitiva de sua conta de usuário e de todos os dados sincronizados na nuvem, basta enviar uma solicitação para <a href="mailto:byteflowstudios@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Exclus%C3%A3o%20de%20Dados%20-%20PayLoop">byteflowstudios@gmail.com</a> informando o e-mail vinculado à sua conta. A solicitação será atendida em até 15 dias úteis.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>7. Alterações a Esta Política de Privacidade</h2>
+                <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir melhorias no aplicativo ou exigências legais. Sempre que houver alterações relevantes, atualizaremos a data no topo desta página.</p>
+            </section>
+
+            <section>
+                <h2>8. Contato</h2>
+                <p>Em caso de dúvidas, sugestões ou solicitações relacionadas à sua privacidade e à proteção dos seus dados, entre em contato conosco:</p>
+                <p><strong>E-mail de Suporte e Privacidade:</strong> <a href="mailto:byteflowstudios@gmail.com">byteflowstudios@gmail.com</a></p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2026 PayLoop &bull; Desenvolvido por ByteFlow Studios. Todos os direitos reservados.<br>
+            <a href="index.html">Página Inicial</a>
+        </p>
+    </footer>
+</body>
+</html>
