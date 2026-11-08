@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Termos de Serviço e Condições de Uso do aplicativo PayLoop. Conheça as regras de utilização, responsabilidades e condições da assinatura PayLoop Pro.">
+    <meta name="theme-color" content="#0D253F">
+    <link rel="icon" type="image/png" href="PayLoop.png">
+    <title>Termos de Serviço - PayLoop</title>
+    <style>
+        :root {
+            --navy: #0D253F;
+            --navy-light: #102A43;
+            --turquoise: #1EBEA5;
+            --turquoise-dark: #159A85;
+            --turquoise-soft: rgba(30, 190, 165, 0.1);
+            --warning-soft: rgba(245, 158, 11, 0.12);
+            --warning-border: #F59E0B;
+            --bg-light: #F5F7FA;
+            --white: #FFFFFF;
+            --text-muted: #52667A;
+            --border-color: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.65;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--navy);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top Navigation */
+        .navbar {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 14px 24px;
+        }
+
+        .navbar-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .brand img {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .back-link {
+            color: #5CE6CF;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.85;
+            text-decoration: underline;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 32px auto 48px;
+            background-color: var(--white);
+            padding: 40px 48px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(13, 37, 63, 0.08);
+            flex-grow: 1;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 2.2rem;
+            color: var(--navy);
+        }
+
+        .updated-badge {
+            display: inline-block;
+            background-color: var(--bg-light);
+            color: var(--text-muted);
+            padding: 4px 14px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+        }
+
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            color: var(--navy);
+            border-bottom: 2px solid var(--turquoise);
+            padding-bottom: 8px;
+            font-size: 1.4rem;
+            margin-top: 28px;
+            margin-bottom: 14px;
+        }
+
+        p, li {
+            font-size: 1rem;
+            color: var(--navy-light);
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--navy);
+        }
+
+        .callout {
+            background-color: var(--turquoise-soft);
+            border-left: 4px solid var(--turquoise);
+            padding: 18px 22px;
+            border-radius: 0 10px 10px 0;
+            margin: 18px 0;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-soft);
+            border-left: 4px solid var(--warning-border);
+            padding: 18px 22px;
+            border-radius: 0 10px 10px 0;
+            margin: 18px 0;
+        }
+
+        .callout p, .callout-warning p {
+            margin: 0;
+        }
+
+        .callout p + p, .callout-warning p + p {
+            margin-top: 10px;
+        }
+
+        a {
+            color: var(--turquoise-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            background-color: var(--white);
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                margin: 16px 12px 32px;
+                padding: 24px 18px;
+            }
+
+            header h1 {
+                font-size: 1.7rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="brand">
+                <img src="PayLoop.png" alt="Logo PayLoop">
+                <span>PayLoop</span>
+            </a>
+            <div class="nav-actions">
+                <a href="politica-de-privacidade.html" class="back-link">Política de Privacidade</a>
+                <a href="index.html" class="back-link">&larr; Voltar para o Início</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Termos de Serviço do PayLoop</h1>
+            <span class="updated-badge"><strong>Última atualização:</strong> Novembro de 2026</span>
+        </header>
+
+        <main>
+            <section>
+                <h2>1. Aceitação dos Termos</h2>
+                <p>Bem-vindo ao <strong>PayLoop</strong>, um aplicativo desenvolvido e operado pela <strong>ByteFlow Studios</strong> ("nós", "nosso"). Estes Termos de Serviço ("Termos") regem o seu acesso e uso do aplicativo móvel PayLoop, do nosso site e dos serviços relacionados (em conjunto, o "Serviço").</p>
+                <p>Ao baixar, instalar, acessar ou utilizar o PayLoop, você declara ter lido, compreendido e concordado com estes Termos e com a nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>. Caso não concorde com qualquer disposição destes Termos, você não deverá utilizar o Serviço.</p>
+            </section>
+
+            <section>
+                <h2>2. Descrição do Serviço</h2>
+                <p>O PayLoop é uma ferramenta de organização financeira pessoal voltada ao gerenciamento e envio de lembretes de contas a pagar e a receber. Suas principais funcionalidades incluem:</p>
+                <ul>
+                    <li>Cadastro manual e organização de contas por ciclos de pagamento;</li>
+                    <li>Extração automatizada de dados de boletos e carnês a partir de imagens (câmera/galeria) ou arquivos PDF via reconhecimento óptico de caracteres (OCR);</li>
+                    <li>Envio de notificações e alertas locais sobre vencimentos próximos ou pendentes;</li>
+                    <li>Sincronização em nuvem vinculada à sua Conta Google;</li>
+                    <li>Automação opcional de leitura de faturas recebidas por e-mail (via integração autorizada com a API do Gmail).</li>
+                </ul>
+                <div class="callout">
+                    <p><strong>Natureza Não Financeira do Serviço:</strong> O PayLoop atua exclusivamente como um organizador e assistente de lembretes. <strong>O PayLoop não é um banco, instituição financeira ou instituição de pagamento</strong>, não retém valores, não intermedia transações financeiras e não realiza pagamentos ou débitos bancários em seu nome.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>3. Conta do Usuário e Segurança</h2>
+                <p>Você pode utilizar recursos locais básicos do aplicativo ou autenticar-se com sua Conta Google (Google Sign-In) para habilitar o backup em nuvem e recursos avançados:</p>
+                <ul>
+                    <li>Você é responsável por manter a segurança do seu dispositivo móvel e das credenciais de acesso à sua Conta Google.</li>
+                    <li>Você compromete-se a fornecer informações precisas e a utilizar o Serviço apenas para fins pessoais, lícitos e de acordo com estes Termos.</li>
+                    <li>Você pode desconectar sua conta ou revogar as permissões concedidas ao PayLoop a qualquer momento nas configurações do aplicativo ou diretamente na sua Conta Google.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Conferência de Dados e Isenção de Responsabilidade sobre Pagamentos</h2>
+                <p>Os recursos de leitura inteligente de boletos (câmera/OCR e PDF) e de Automação de E-mails (Gmail) utilizam algoritmos de extração de texto para facilitar o preenchimento dos dados das suas contas. Contudo, fatores externos — como baixa qualidade de impressão ou foto, alterações no layout de boletos pelos emissores, restrições de bateria/notificações do sistema operacional Android ou indisponibilidade de rede — podem impactar a precisão da leitura ou a entrega de alertas.</p>
+
+                <div class="callout-warning">
+                    <p><strong>Importante — Responsabilidade de Conferência pelo Usuário:</strong></p>
+                    <p>Antes de efetuar qualquer pagamento no aplicativo do seu banco, <strong>é sua responsabilidade exclusiva conferir se o beneficiário, o valor, a data de vencimento e o código de barras (linha digitável) estão corretos</strong> e correspondem ao documento original emitido pelo credor.</p>
+                    <p>A ByteFlow Studios não se responsabiliza por atrasos, multas, juros, encargos financeiros, suspensão de serviços de terceiros ou pagamentos realizados com valores ou códigos divergentes.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>5. Automação de E-mails (Gmail API)</h2>
+                <p>Ao ativar opcionalmente a Automação de E-mails, você autoriza o PayLoop a buscar faturas e boletos em sua caixa de entrada do Gmail exclusivamente com base nos <strong>Filtros Monitorados</strong> configurados por você:</p>
+                <ul>
+                    <li>Você é responsável por configurar corretamente os remetentes e palavras-chave dos filtros que deseja monitorar.</li>
+                    <li>A automação depende de o emissor da fatura enviar o e-mail em formato compatível e dentro do prazo. A ausência de detecção automática de um boleto por e-mail não exime o usuário de acompanhar seus compromissos financeiros regulares.</li>
+                    <li>O tratamento dos dados obtidos via API do Gmail segue rigorosamente os requisitos de Uso Limitado detalhados em nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Planos, Assinatura PayLoop Pro e Pagamentos</h2>
+                <p>O PayLoop oferece uma versão gratuita (com recursos essenciais e exibição de anúncios) e planos de assinatura opcionais (<strong>PayLoop Pro</strong>, nas modalidades mensal ou anual), que desbloqueiam funcionalidades adicionais como Automação de E-mails, relatórios completos e remoção de anúncios.</p>
+                <ul>
+                    <li><strong>Processamento via Google Play:</strong> Todas as assinaturas são processadas e faturadas diretamente pela Google Play Store, aplicando-se os termos de pagamento da plataforma Google Play.</li>
+                    <li><strong>Renovação Automática e Cancelamento:</strong> As assinaturas são renovadas automaticamente ao final de cada período (mensal ou anual), a menos que sejam canceladas por você com pelo menos 24 horas de antecedência do término do ciclo vigente na seção <em>Pagamentos e assinaturas</em> da Google Play Store.</li>
+                    <li><strong>Reembolsos:</strong> Solicitações de cancelamento e reembolso seguem as políticas vigentes da Google Play Store e o Código de Defesa do Consumidor (Lei nº 8.078/1990).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>7. Propriedade Intelectual e Uso Aceitável</h2>
+                <p>Todo o código-fonte, design visual, logotipos, textos, ícones, algoritmos de extração e marcas associadas ao <strong>PayLoop</strong> são de propriedade exclusiva da <strong>ByteFlow Studios</strong> e estão protegidos pelas leis de propriedade intelectual e direitos autorais.</p>
+                <p>Ao utilizar o Serviço, é expressamente proibido:</p>
+                <ul>
+                    <li>Copiar, modificar, distribuir, vender ou alugar qualquer parte do aplicativo ou de seus serviços de nuvem;</li>
+                    <li>Realizar engenharia reversa, descompilar ou tentar extrair o código-fonte do aplicativo;</li>
+                    <li>Utilizar o Serviço para atividades fraudulentas, ilegais ou que sobrecarreguem intencionalmente nossa infraestrutura em nuvem.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>8. Disponibilidade, Atualizações e Encerramento</h2>
+                <p>Buscamos manter o PayLoop sempre atualizado, seguro e disponível. No entanto, podemos realizar manutenções programadas ou emergenciais, bem como adicionar, alterar ou descontinuar funcionalidades visando a melhoria contínua do aplicativo.</p>
+                <p>Você pode encerrar o uso do PayLoop a qualquer momento desinstalando o aplicativo, cancelando eventuais assinaturas ativas na Google Play Store e solicitando a exclusão dos seus dados conforme descrito em nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+            </section>
+
+            <section>
+                <h2>9. Alterações nestes Termos</h2>
+                <p>Podemos revisar estes Termos de Serviço periodicamente para refletir novos recursos, mudanças operacionais ou exigências legais. A versão atualizada estará sempre disponível nesta página com a respectiva data de última atualização. O uso continuado do aplicativo após a publicação de alterações constitui aceitação dos novos Termos.</p>
+            </section>
+
+            <section>
+                <h2>10. Legislação Aplicável e Contato</h2>
+                <p>Estes Termos são regidos e interpretados de acordo com as leis da República Federativa do Brasil.</p>
+                <p>Para dúvidas, suporte técnico ou solicitações relacionadas a estes Termos de Serviço, entre em contato conosco:</p>
+                <p><strong>E-mail:</strong> <a href="mailto:byteflowstudios@gmail.com">byteflowstudios@gmail.com</a></p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2026 PayLoop &bull; Desenvolvido por ByteFlow Studios. Todos os direitos reservados.<br>
+            <a href="index.html">Página Inicial</a> &bull;
+            <a href="politica-de-privacidade.html">Política de Privacidade</a> &bull;
+            <a href="mailto:byteflowstudios@gmail.com">Contato</a>
+        </p>
+    </footer>
+</body>
+</html>
+
